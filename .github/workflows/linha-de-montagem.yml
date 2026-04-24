@@ -1,15 +1,14 @@
 name: Minha Primeira Linha de Montagem
 
-  on: 
-    push:
-      branches: [ main ] 
+on: 
+  push:
+    branches: [ main ] 
 
 jobs: 
   build-e-teste:
     runs-on: ubuntu-latest 
-  
-    steps:
-      steps: 
+
+    steps: 
         - name: 1. Pegar o chassi do carro (código-fonte)
           uses: actions/checkout@v3 
       
